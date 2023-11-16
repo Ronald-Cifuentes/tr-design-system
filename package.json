@@ -5,7 +5,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "commit": "npx gitmoji-cli -c"
+    "commit": "npx gitmoji-cli -c",
+    "publish-packages": "turbo run build && npm run lint"
   },
   "devDependencies": {
     "eslint": "^8.48.0",
